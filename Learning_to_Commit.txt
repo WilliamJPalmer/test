@@ -1,0 +1,18 @@
+cd Desktop/
+mkdir test
+cd test
+touch index.html styles.css aboutMe.txt
+git init
+git add .
+git commit -m "created new index.html styles.css and aboutMe.txt files"
+vi aboutMe.txt
+git add .
+git commit -m "updated my aboutMe.txt"
+vi aboutMe.txt
+git add .
+git commit -m "added favorite movie to aboutMe.txt"
+git log
+git revert 46a23b6e8b644ec67dd7ff5ba89a162cf503c874
+vi aboutMe.txt
+git add .
+git commit -m "Reverted most recent aboutMe.txt and changed movie info"
